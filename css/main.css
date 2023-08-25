@@ -1010,6 +1010,6 @@ form {
 .menu__catalog {
 	display: none;
 }
-.slider-billbord:not(.slick-initialized) > div:not(:first-child) {
+.slider-billbord:not(.slick-initialized) > *:not(:first-child) {
   display: none;
 }
