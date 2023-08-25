@@ -634,6 +634,12 @@
 		border-radius: 10px;
 		background-color: #4D4D4D;
 	}
+	.tabs li {
+		flex-grow: initial;
+	}
+	.tabs a {
+		padding: 0 20px;
+	}
 }
 
 /* Extra Small Devices, Phones */
