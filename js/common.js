@@ -18,6 +18,15 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 	$menu.removeClass("fixed").addClass("default");
 }
 
+{
+	if ($(window).width() < 992) { 
+		$(".footer__title").click(function() {
+			$(this).toggleClass("active");
+			$(this).next(".footer__content").slideToggle(200);
+		}); 
+	}
+}
+
 	//плавный скролл
 	$(".navigat li a").mPageScroll2id();
 
@@ -48,7 +57,7 @@ if ( $(this).scrollTop() > 0 && $menu.hasClass("default") ){
 		arrows: false,
 		dots: true,
 		infinite: true,
-			autoplay: true,
+		autoplay: true,
 		autoplaySpeed: 4000,
 		touchThreshold: 1000,
 		slidesToShow: 1,
